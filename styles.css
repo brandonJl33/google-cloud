@@ -1,0 +1,118 @@
+/* General */
+
+/* Estilo general del cuerpo de la página */
+body 
+{  
+   font-family: 'Arial', sans-serif; /* Define la fuente principal de la página */
+   margin: 0; /* Elimina márgenes predeterminados del navegador */
+   padding: 0; /* Elimina relleno predeterminado del navegador */
+   background: linear-gradient(to right, #6a11cb, #2575fc); /* Aplica un degradado horizontal de morado a azul */
+   color: #333; /* Define el color del texto en gris oscuro */
+}
+
+/* Contenedor principal */
+
+/* Estilo del contenedor principal */
+.container 
+{   
+    width: 90%; /* Establece que el contenedor ocupe el 90% del ancho de la ventana */
+    max-width: 600px; /* Limita el ancho máximo a 600px */
+    margin: 50px auto; /* Centra el contenedor horizontal y verticalmente */
+    background: #fff; /* Establece un fondo blanco para el contenedor */
+    padding: 20px; /* Agrega espacio interno de 20px */
+    border-radius: 10px; /* Aplica bordes redondeados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Agrega una sombra para un efecto de profundidad */
+}
+
+/* Encabezado */
+
+/* Estilo del título */
+h1 
+{  
+   text-align: center; /* Centra el texto del encabezado */
+   color: #444; /* Establece un color gris oscuro para el texto */
+   margin-bottom: 20px; /* Añade un espacio inferior */
+}
+
+/* Etiquetas y campos de formulario */
+
+/* Estilo de las etiquetas */
+label 
+{  
+   font-weight: bold; /* Resalta el texto en negrita */
+   margin-top: 15px; /* Agrega un margen superior para separar las etiquetas */
+   display: block; /* Asegura que cada etiqueta ocupe todo el ancho disponible */
+   color: #555; /* Define un color gris medio para el texto */
+}
+
+/* Estilo de los campos de entrada de texto, listas y áreas de texto */
+input[type="text"], select, textarea 
+{   
+    width: 96%; /* Ocupa el 96% del ancho del contenedor */
+    padding: 12px; /* Añade espacio interno para mejor legibilidad */
+    margin: 8px 0 15px 0; /* Define márgenes superior, inferior y entre campos */
+    border: 1px solid #ccc; /* Aplica un borde gris claro */
+    border-radius: 5px; /* Redondea las esquinas */
+    font-size: 16px; /* Define un tamaño de fuente legible */
+    transition: all 0.3s ease-in-out; /* Añade una transición suave en el foco */
+}
+
+/* Efectos al enfocar un campo */
+input[type="text"]:focus select:focus, textarea:focus 
+{
+    border-color: #2575fc; /* Cambia el color del borde al azul */
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5); /* Añade un brillo azul al campo enfocado */
+}
+
+/* Radio y Checkbox */
+
+/* Estilo de los grupos de radio y checkbox */
+.radio-group label, .checkbox-group label 
+{
+    display: inline-block; /* Mantiene las opciones en línea */
+    margin-right: 15px; /* Agrega espacio entre las opciones */
+    font-weight: normal; /* Quita el texto en negrita */
+}
+
+/* List box */
+
+/* Estilo del cuadro de lista múltiple */
+.list-box 
+{
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 120px; /* Define una altura fija */
+    padding: 10px; /* Añade espacio interno */
+    border: 1px solid #ccc; /* Aplica un borde gris claro */
+    border-radius: 5px; /* Redondea las esquinas */
+    background: #f9f9f9; /* Establece un fondo gris claro */
+}
+
+/* Botones */
+
+/* Estilo de los botones */
+button 
+{
+    background: #2575fc; /* Define un color azul para el fondo */
+    color: white; /* Colorea el texto de los botones en blanco */
+    border: none; /* Elimina bordes visibles */
+    padding: 10px 20px; /* Añade espacio interno horizontal y vertical */
+    margin: 10px 5px; /* Establece espacio exterior entre botones */
+    border-radius: 5px; /* Aplica esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background 0.3s ease; /* Crea una transición suave en el color de fondo */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+button:hover 
+{
+    background: #1e63d9; /* Oscurece el color del fondo al pasar el mouse */
+}
+
+/* Alineación de botones */
+
+/* Centra los botones */
+.button-group 
+{
+    text-align: center; /* Alinea el contenido del grupo de botones al centro */
+}
+

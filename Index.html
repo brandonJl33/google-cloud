@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="es">  <!-- Define el tipo de documento HTML y establece el idioma a español -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Configura la codificación de caracteres en UTF-8 para soportar caracteres especiales como acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la página para ser responsiva en dispositivos móviles -->
+    <title>Formulario de Inscripción</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo donde se define el diseño de la página -->
+</head>
+
+<body> <!-- Inicia el cuerpo del documento HTML -->
+
+    <div class="container"> <!-- Contenedor principal que agrupa y estructura el contenido del formulario -->
+        
+        <h1>Formulario de Inscripción</h1> <!-- Título principal del formulario -->
+
+        <form> <!-- Inicia el formulario donde se recolectará la información del usuario -->
+
+            <label for="name">Nombre Completo:</label> <!-- Etiqueta para describir el campo de entrada de texto para el nombre -->
+
+            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+            <!-- Campo de texto para que el usuario ingrese su nombre completo.
+             - `type`: indica que el elemento sera un cuadro de texto.
+             - `id` : asigna un identificador único a este elemento dentro del documento HTML.
+             - `name` : será el nombre de la variable que se enviará al servidor con el dato escrito en el campo de entrada.
+             - `placeholder`: muestra un texto sugerido dentro del campo.
+             - `required`: obliga a llenar este campo antes de enviar. -->
+
+            <label for="email">Correo Electrónico:</label> <!-- Etiqueta para describir el campo de entrada de texto para el correo -->
+
+            <input type="text" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <!-- Campo de texto para ingresar un correo electrónico.
+              - `type`: indica que el elemento sera un cuadro de texto.
+              - `id` : asigna un identificador único a este elemento dentro del documento HTML.
+              - `name` : será el nombre de la variable que se enviará al servidor con el dato escrito en el campo de entrada.
+              - `placeholder`: muestra un ejemplo de formato de correo.
+              - `required`: obliga a llenar este campo antes de enviar. -->
+
+            <label for="course">Selecciona un curso:</label> <!-- Etiqueta para el menú desplegable -->
+
+            <select id="course" name="course">  <!-- Campo select para que el usuario elija una opción -->
+                <option value="html">HTML Básico</option>         <!-- Opción para el curso de HTML -->
+                <option value="css">CSS Básico</option>           <!-- Opción para el curso de CSS -->
+                <option value="js">JavaScript Básico</option>     <!-- Opción para el curso de JavaScript -->
+            </select>
+
+            <br> <!-- Etiqueta para el salto de linea -->
+
+            <div class="radio-group"> <!-- Contenedor para agrupar las opciones de radio -->
+
+                <label>Modalidad del curso:</label>  <!-- Etiqueta que describe las opciones -->
+
+                <label><input type="radio" name="mode" value="online"> Online</label>
+                <!-- Botón de radio para la modalidad "Online".
+                  - `type`: indica que el elemento sera un boton de opciones.
+                  - `name`: agrupa las opciones de radio para elegir solo una.
+                  - `value`: identifica la opción elegida. -->
+
+                <label><input type="radio" name="mode" value="presencial"> Presencial</label>
+                <!-- Botón de radio para la modalidad "Presencial".
+                  - `type`: indica que el elemento sera un boton de opciones.
+                  - `name`: agrupa las opciones de radio para elegir solo una.
+                  - `value`: identifica la opción elegida. -->
+
+            </div>
+
+            <div class="checkbox-group">  <!-- Contenedor para agrupar las casillas de verificación -->
+
+                <label>Temas de interés:</label>  <!-- Etiqueta que describe las opciones -->
+                
+                <label><input type="checkbox" name="topics" value="frontend"> Frontend</label>
+                <!-- Casilla de verificación para el tema "Frontend".
+                 - `type`: indica que el elemento sera una caja de chequeo.
+                 - `name`: agrupa las casillas para múltiples selecciones.
+                 - `value`: identifica la opción seleccionada. -->
+
+                <label><input type="checkbox" name="topics" value="backend"> Backend</label>
+                <!-- Casilla de verificación para el tema "Backend".
+                 - `type`: indica que el elemento sera una caja de chequeo.   
+                 - `name`: agrupa las casillas para múltiples selecciones.
+                 - `value`: identifica la opción seleccionada. -->
+
+                <label><input type="checkbox" name="topics" value="fullstack"> Fullstack</label>
+                <!-- Casilla de verificación para el tema "Fullstack".
+                 - `type`: indica que el elemento sera una caja de chequeo.   
+                 - `name`: agrupa las casillas para múltiples selecciones.
+                 - `value`: identifica la opción seleccionada. -->
+
+            </div>
+
+            <br> <!-- Etiqueta para el salto de linea -->
+
+            
+            <label for="mensaje">Mensaje:</label> <!-- Etiqueta y campo de texto largo -->
+
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+            <!-- Campo de texto para ingresar texto largo.
+              - `id` : asigna un identificador único a este elemento dentro del documento HTML.
+              - `name` : será el nombre de la variable que se enviará al servidor con el dato escrito en el campo de entrada.
+              - `row`: indica el numero de filas que tentra la caja de texto para escribir.
+              - `placeholder`: muestra un ejemplo de formato de correo.-->
+             
+
+            <div class="button-group">  <!-- Contenedor para agrupar los botones -->
+                
+                <button type="submit">Enviar</button> 
+                <!-- Botón para enviar el formulario.
+                 - `type="submit"`: envía los datos del formulario al servidor. -->
+                
+                <button type="reset">Limpiar</button>
+                <!-- Botón para reiniciar el formulario.
+                 - `type="reset"`: borra todos los campos del formulario. -->
+                 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
